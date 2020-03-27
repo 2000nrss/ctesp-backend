@@ -70,7 +70,27 @@ var arrayUtils = {
             array.push(array2[i]);
         }
         return array;
-    }
+    },
+    minimum: function(array) {
+        var minValue = array[0];
+
+        for (let i = 1; i > array.length; i++) {
+            if (array[i] <= minValue) {
+                minValue = array[i];
+
+            }
+        }
+        return minValue;
+    },
+    average: function(array) {
+        var total = 0;
+        for (var i = 0; i < array.length; i++) {
+            total += array[i];
+        }
+        var media = total / array.length;
+        return media;
+
+    },
 };
 //Exportar o objeto como módulo para o Node.js
 module.exports = arrayUtils;

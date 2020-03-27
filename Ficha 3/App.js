@@ -50,3 +50,9 @@ console.log("Array contains value?: " + contains);
 
 var concat = arrayUtils.concatenate(array, [7, 7, 7, 7]);
 console.log("Concat: " + concat);
+
+var minimum = arrayUtils.minimum(array);
+console.log("Minimum value of array: " + minimum);
+
+var average = arrayUtils.average(array);
+console.log("Average: " + average);
